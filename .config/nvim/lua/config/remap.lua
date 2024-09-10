@@ -1,11 +1,6 @@
-vim.wo.relativenumber = true
-vim.wo.number = true
-
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.tabstop = 8
-vim.opt.softtabstop = 0
-vim.opt.smartindent = false
-
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>a", vim.lsp.handlers["textDocument/codeAction"])
+vim.keymap.set("n", "<leader>d", vim.lsp.handlers["textDocument/definition"])
+vim.keymap.set("n", "<leader>r", function()
+    return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true })
