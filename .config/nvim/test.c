@@ -7,6 +7,8 @@ void
 function(int number)
 {
     number += 1;
+    number += 2;
+    number += 3;
 }
 
 int
