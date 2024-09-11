@@ -1,6 +1,5 @@
 return {
     "roobert/action-hints.nvim",
-    enabled = false,
     opts = {
         template = {
             definition = { text = " ⊛", color = "#add8e6" },
