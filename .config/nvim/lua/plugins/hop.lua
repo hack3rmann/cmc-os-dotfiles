@@ -12,6 +12,6 @@ return {
         
         vim.keymap.set("", "<leader><leader>/", function()
             hop.hint_patterns({ direction = Direcion.ALL, current_line_only = false })
-        end, { remap = true })
+        end, { remap = true, desc = "Easymotion jump" })
     end,
 }
