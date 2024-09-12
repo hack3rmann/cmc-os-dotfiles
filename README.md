@@ -18,3 +18,8 @@ git clone https://github.com/slava30727/cmc-os-nvim-config.git dotfiles
 cd dotfiles
 make
 ```
+
+### 3. Install all components (rust + zoxide + eza + bat)
+```shell
+sh install.sh
+```
