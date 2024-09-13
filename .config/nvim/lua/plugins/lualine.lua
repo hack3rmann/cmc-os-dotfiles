@@ -3,7 +3,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
         options = {
-            theme = "horizon",
+            theme = "tokyonight",
             ignore_focus = { "neo-tree" },
         },
         sections = {
