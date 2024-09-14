@@ -3,8 +3,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
         options = {
-            theme = "tokyonight",
-            ignore_focus = { "neo-tree" },
+            theme = "auto",
         },
         sections = {
             lualine_c = {
@@ -14,6 +13,7 @@ return {
             },
             lualine_x = { require("action-hints").statusline },
         },
+        extensions = { "neo-tree", "lazy" },
     },
     config = function(spec, opts)
         local lualine = require "lualine"
