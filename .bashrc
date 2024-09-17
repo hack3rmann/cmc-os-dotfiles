@@ -29,6 +29,9 @@ alias la="eza -a"
 alias lal="eza -al"
 alias tree="eza -aT"
 
+alias gccfg="gcc -Wall -Wextra -std=gnu23 -g"
+alias gccfo="gcc -Wall -Wextra -std=gnu23 -O2"
+
 alias bat="bat --theme TwoDark"
 
 alias vim="nvim"
