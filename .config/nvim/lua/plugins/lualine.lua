@@ -14,6 +14,7 @@ return {
     opts = {
         options = {
             theme = "auto",
+            globalstatus = true,
         },
         sections = {
             lualine_c = {
