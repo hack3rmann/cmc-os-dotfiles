@@ -29,8 +29,10 @@ alias la="eza -a"
 alias lal="eza -al"
 alias tree="eza -aT"
 
-alias gccfg="gcc -Wall -Wextra -std=gnu23 -g"
-alias gccfo="gcc -Wall -Wextra -std=gnu23 -O2"
+DEFAULT_CC_FLAGS="-Wall -Wextra -std=gnu23 -lm"
+
+alias gccfg="gcc ${DEFAULT_CC_FLAGS} -g"
+alias gccfo="gcc ${DEFAULT_CC_FLAGS} -O2"
 
 alias bat="bat --theme TwoDark"
 
