@@ -16,7 +16,6 @@ return {
             },
             hover = { enabled = false },
         },
-        -- you can enable a preset for easier configuration
         presets = {
             bottom_search = true, -- use a classic bottom cmdline for search
             command_palette = true, -- position the cmdline and popupmenu together
@@ -24,12 +23,9 @@ return {
             inc_rename = true, -- enables an input dialog for inc-rename.nvim
             lsp_doc_border = false, -- add a border to hover docs and signature help
         },
-        cmdline = {
-            enabled = true,
-            view = "cmdline",
-        },
+        cmdline = { enabled = true },
     },
-    config = function(spec, opts)
+    config = function(_, opts)
         require("noice").setup(opts)
     end,
 }
