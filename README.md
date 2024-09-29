@@ -19,7 +19,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 ### 2. Clone repo and extract files (with make)
 
 ```shell
-git clone https://github.com/slava30727/cmc-os-nvim-config.git ~/dotfiles
+git clone https://github.com/hack3rmann/cmc-os-nvim-config.git ~/dotfiles
 cd ~/dotfiles
 make
 ```
