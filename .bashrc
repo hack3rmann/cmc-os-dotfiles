@@ -32,3 +32,4 @@ fi
 source ~/.aliases.sh
 
 eval "$(zoxide init bash --cmd cd)"
+. "$HOME/.cargo/env"
