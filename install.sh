@@ -9,4 +9,4 @@ cargo install zoxide bat eza
 source ~/.bashrc
 
 # Install zsh
-sh install_zsh.sh
+# sh install_zsh.sh
