@@ -33,3 +33,17 @@ source ~/.aliases.sh
 
 eval "$(zoxide init bash --cmd cd)"
 . "$HOME/.cargo/env"
+
+CONTEST_PATH="$HOME/contest"
+ATTACH_SCRIPT="$HOME/dotfiles/attach_ejudge.sh"
+
+submit() {
+    # Attach ejudge if it is not attached
+    if [[ ! -d $CONTEST_PATH ]] || [[ -z "$(ls -A $CONTEST_PATH)" ]]; then
+        echo "Authorize ejudge:"
+        $ATTACH_SCRIPT
+    fi
+
+    echo "Submitting solution $2 to problem $1"
+    cp "$2" "$CONTEST_PATH/524/problems/$1/submit/gcc/"
+}
