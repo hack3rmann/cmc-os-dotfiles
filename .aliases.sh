@@ -62,6 +62,15 @@ submit() {
         $ATTACH_SCRIPT
     fi
 
-    echo "Submitting solution $2 to problem $1"
-    cp "$2" "$CONTEST_PATH/524/problems/$1/submit/gcc/"
+    PROBLEM=$1
+    SOLUTION=$2
+
+    # Check formatting
+    if [[ ! "$(cat $SOLUTION)" = "$(clang-format $SOLUTION)" ]]; then
+        echo "File $SOLUTION is not formatted properly, use clang-format first."
+        return 0
+    fi
+
+    echo "Submitting solution $SOLUTION to problem $PROBLEM"
+    cp $SOLUTION "$CONTEST_PATH/524/problems/$PROBLEM/submit/gcc/"
 }
