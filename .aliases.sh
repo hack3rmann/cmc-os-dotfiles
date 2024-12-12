@@ -2,6 +2,8 @@
 . "$HOME/.cargo/env"
 PATH="$PATH:$HOME/.cargo/"
 
+export EDITOR=nvim
+
 # `eza` is installed
 if [[ ! "$(which eza)" = "" ]]; then
     alias ls="eza"
